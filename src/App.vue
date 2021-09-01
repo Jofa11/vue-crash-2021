@@ -5,11 +5,13 @@
     <AddTask @add-task="addTask" />
   </div>
   <Tasks @toggle-reminder="toggleReminder" @delete-task="deleteTask" :tasks="tasks" />
+  <Footer />
 </div>
 </template>
 
 <script>
 import Header from './components/Header'
+import Footer from './components/Footer'
 import Tasks from './components/Tasks'
 import AddTask from './components/AddTask.vue'
 
@@ -18,7 +20,8 @@ export default {
   components: {
     Header,
     Tasks,
-    AddTask
+    AddTask,
+    Footer
   },
   data() {
     return {
